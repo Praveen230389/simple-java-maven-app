@@ -17,7 +17,9 @@ spec:
           image: your-dockerhub-username/my-java-project:latest
           imagePullPolicy: IfNotPresent
           ports:
-            - containerPort: 8080  # must match EXPOSE in Dockerfile
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: dockerhub-secret
 
 ---
 apiVersion: v1
