@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-java-project
-          image: your-dockerhub-username/my-java-project:latest
+          image: praveen230389/my-java-project:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
